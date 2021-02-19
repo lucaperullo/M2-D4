@@ -143,8 +143,8 @@ h1 {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
 }
 #body {
-  background-color: #141414;
-  margin-top: 35vh;
+  background-color: #0a0a0a;
+  margin-top: 5vh;
   padding-top: 50px;
 }
 h2 {
@@ -152,4 +152,10 @@ h2 {
   font-size: 20px !important;
   margin-left: 30px;
   margin-top: 20px !important;
+}
+.wrapperr {
+  color: white;
+  width: 400px;
+  margin-left: -200px;
+  padding-top: 300px;
 }
