@@ -9,7 +9,7 @@
 }
 video {
   position: absolute;
-  margin-top: -400px;
+  margin-top: -200px;
   z-index: -1;
   width: 100vw;
   transition: none;
@@ -28,7 +28,7 @@ a:hover {
   margin-left: 35px;
   margin-top: 10px;
 }
-li {
+.nav-item {
   font-size: 12px;
   margin-left: 22px;
 }
@@ -61,20 +61,30 @@ nav {
   position: fixed !important;
   width: 100%;
 }
-.wrapper {
-  margin-top: 23vh;
-  color: white;
-  width: 360px;
-  margin-left: -250px;
-}
-h4 {
+
+.h4 {
   font-weight: 700 !important;
   font-size: 31px !important;
 }
-p {
+.p {
   font-size: 20px;
   font-weight: 400;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: Arial;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 100%);
@@ -89,6 +99,7 @@ p {
   margin: 20px 0;
 }
 .wrapper section .item {
+  position: relative;
   padding: 0 2px;
   transition: 250ms all;
 }
@@ -96,7 +107,19 @@ p {
   margin: 0 40px;
   transform: scale(1.2);
 }
-.wrapper section a {
+.wrapper section .item .heading {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+.wrapper section .item .duration {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  color: #fff;
+}
+.wrapper section .arrow__btn {
   position: absolute;
   color: #fff;
   text-decoration: none;
@@ -107,28 +130,26 @@ p {
   text-align: center;
   z-index: 1;
 }
-.wrapper section a:nth-of-type(1) {
+.wrapper section .left-arrow {
   top: 0;
   bottom: 0;
   left: 0;
   background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
 }
-.wrapper section a:nth-of-type(2) {
+.wrapper section .right-arrow {
   top: 0;
   bottom: 0;
   right: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
 }
-
-@media only screen and (max-width: 600px) {
-  a.arrow__btn {
-    display: none;
-  }
-}
-
-body {
+#body {
   background-color: #141414;
+  margin-top: 35vh;
+  padding-top: 50px;
 }
-.wrapper > section > .item > img {
-  border-radius: 7px;
+h2 {
+  color: white;
+  font-size: 20px !important;
+  margin-left: 30px;
+  margin-top: 20px !important;
 }
