@@ -44,6 +44,7 @@ body {
 #editProfile{
     max-width: 60vw;
     margin-top: 8rem;
+    min-width: 300px
 }
 
 button.btn-outline-dark {
@@ -66,4 +67,6 @@ span{
     color: #141414;
     font-size: 0.5rem;
     font-weight: 400;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
 }
